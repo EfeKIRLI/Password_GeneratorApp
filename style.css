@@ -1,0 +1,108 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color : #20bf55;
+    background-image : linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /*to make plain the gradient*/
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pw-container {
+    background-color: #c2eaba;
+    background-image: linear-gradient(319deg, #c2eaba 0%, #c5f4e0 37%, #efc2cf 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    width: 400px;
+    border-radius: 10px;
+    
+}
+.pw-header{
+    
+    padding: 1rem;
+
+}
+
+.pw{
+    
+    background-color: #98ce00;
+    background-image: linear-gradient(319deg, #98ce00 0%, #e5f77d 37%, #dc9e82 100%);
+
+    border-radius: 10px;
+    font-size: 1.5rem;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /*pw button will be position:absolute*/
+    /* overflow: auto; */
+}
+.pw button {
+
+    background-color:#A6D0DD ;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    border-radius: 10px;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    transform: translate(50%, -250%);
+    /* transform: translate(0,-300%); */
+    
+}
+.pw:hover button{
+    opacity: 1;
+    animation: tilt-shaking 0.4s;
+}
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+.generate{ 
+     background-color: #FFA559 ;
+     color: #0B2447;
+     display: inline-block;
+     font-weight: bold;
+     letter-spacing: 1px;
+     padding: 0.85rem;
+     border-radius: 5px;
+     border: none;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     font-size: 1rem;
+     cursor: pointer;
+     width: 100%;
+     
+}
+.generate:hover {
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    
+}
